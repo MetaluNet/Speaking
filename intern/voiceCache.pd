@@ -1,0 +1,3 @@
+#N canvas 92 157 450 300 10;
+#X obj 101 93 text define speaking-\$2-voice-\$1;
+#X obj 102 39 inlet;
