@@ -1,5 +1,5 @@
 # Pd Speaking
-** A library to make your pure-data patches speak, using a database of wav files. **
+**A library to make your pure-data patches speak, using a database of wav files.**
 
 ## Description
 Speaking allow building a speech program by connecting elementary **say** blocks. Each **say** plays one of the user's soundfiles (a "phrase"), then triggers the next block. The soundfiles have to be organized in a precise tree structure, in the same way as the proposed example:
