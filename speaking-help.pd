@@ -1,28 +1,28 @@
-#N canvas 856 196 475 381 10;
+#N canvas 856 196 475 449 10;
 #X declare -path .;
 #X declare -stdpath ggee;
 #X obj 44 22 declare -path .;
-#X obj 44 290 loadbang;
-#X msg 44 311 0;
-#X obj 36 134 cnv 15 120 40 empty empty empty 20 12 0 14 -260097 -66577
+#X obj 45 362 loadbang;
+#X msg 45 383 0;
+#X obj 36 134 cnv 15 120 100 empty empty empty 20 12 0 14 -260097 -66577
 0;
 #X obj 43 92 getdir;
 #X obj 43 72 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 43 51 loadbang;
-#X obj 36 189 cnv 15 150 40 empty empty empty 20 12 0 14 -257985 -66577
+#X obj 37 261 cnv 15 150 40 empty empty empty 20 12 0 14 -257985 -66577
 0;
-#X obj 43 254 dac~;
-#X obj 43 140 speaking MYSPEECH;
-#X obj 43 209 speaker MYSPEECH 1;
+#X obj 44 326 dac~;
+#X obj 43 139 speaking MYSPEECH;
+#X obj 44 281 speaker MYSPEECH 1;
 #X msg 43 113 maindir \$1/myspeech-wavs;
-#X obj 44 333 v MYSPEECH-VOICE1;
-#X text 43 157 speaking master;
-#X text 41 192 audio speaker instance;
+#X obj 45 405 v MYSPEECH-VOICE1;
+#X text 94 79 speaking master;
+#X text 42 264 audio speaker instance;
 #X obj 207 93 cnv 15 250 250 empty empty empty 20 12 0 14 -204786 -66577
 0;
 #X text 217 96 speech program:;
-#X msg 76 311 1;
+#X msg 77 383 1;
 #N canvas 1 81 450 300 database-utils 0;
 #X msg 47 40 0;
 #X msg 77 40 1;
@@ -52,7 +52,7 @@
 #X connect 13 1 5 0;
 #X connect 14 0 9 0;
 #X connect 14 1 10 0;
-#X restore 207 351 pd database-utils;
+#X restore 216 407 pd database-utils;
 #X obj 202 23 declare -stdpath ggee;
 #X text 335 23 needed for [getdir];
 #X text 177 48 Additional needed externals: hcs iemlib;
@@ -62,11 +62,13 @@
 #X obj 215 263 say MYSPEECH1 VOICE1 RND goodbye 0;
 #X obj 215 302 bng 15 250 50 0 empty empty end 17 7 0 10 -262144 -1
 -1;
-#X text 99 290 set "VOICE1":;
+#X text 100 362 set "VOICE1":;
 #X obj 215 129 bng 15 250 50 0 empty empty start 17 7 0 10 -262144
 -1 -1;
-#X obj 43 230 *~ 0.1;
+#X obj 44 302 *~ 0.1;
 #X obj 215 188 say MYSPEECH1 - - - 1000;
+#X obj 216 355 say MYSPEECH1 RND RND hello 500;
+#X text 367 189 silence;
 #X connect 1 0 2 0;
 #X connect 2 0 12 0;
 #X connect 4 0 11 0;
