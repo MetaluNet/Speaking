@@ -145,7 +145,8 @@
 #X connect 14 0 16 0;
 #X connect 15 0 14 1;
 #X connect 16 0 1 0;
-#X restore 145 407 #X f 16;
+#X restore 145 407;
+#X f 16;
 #X obj 76 385 list split 2, f 24;
 #X obj 76 429 list append, f 12;
 #X obj 76 450 text set speaker-\$1\$2-set, f 23;
@@ -185,7 +186,8 @@
 #X connect 23 0 12 0;
 #X connect 24 0 4 0;
 #X connect 24 1 23 1;
-#X restore 58 591 #X obj 130 280 s \$0-line-in-master-set;
+#X restore 58 591;
+#X obj 130 280 s \$0-line-in-master-set;
 #X obj 157 375 r \$0-line-in-master-set;
 #X obj 102 173 s \$0-voicename;
 #X obj 272 629 r \$0-voicename;
@@ -242,7 +244,8 @@
 #X connect 40 0 12 1;
 #X connect 41 0 29 1;
 #X connect 43 0 10 1;
-#X restore 37 277 #X obj 148 428 b;
+#X restore 37 277;
+#X obj 148 428 b;
 #X obj 194 117 -1;
 #X obj 464 303 text define speaker-\$1\$2-set;
 #X msg 464 359 -1;
