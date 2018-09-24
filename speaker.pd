@@ -89,7 +89,7 @@
 #X obj 58 353 sel -1, f 10;
 #X obj 115 375 t f b;
 #X obj 142 397 f;
-#N canvas 463 220 377 586 random_phrase 0;
+#N canvas 463 247 377 586 random_phrase 0;
 #X obj 154 31 r \$0-phrase;
 #X obj 256 53 r \$0-voicename;
 #X obj 49 29 inlet bang;
@@ -121,7 +121,7 @@
 #X obj 106 229 list split 1, f 13;
 #X obj 54 272 list append, f 15;
 #X obj 143 251 list append, f 17;
-#X obj 54 297 list append, f 17;
+#X obj 54 297 list append, f 16;
 #X connect 0 0 3 0;
 #X connect 3 0 9 0;
 #X connect 3 1 4 0;
@@ -146,7 +146,6 @@
 #X connect 15 0 14 1;
 #X connect 16 0 1 0;
 #X restore 145 407 pd shufflelist;
-#X f 16;
 #X obj 76 385 list split 2, f 24;
 #X obj 76 429 list append, f 12;
 #X obj 76 450 text set speaker-\$1\$2-set, f 23;
